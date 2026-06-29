@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { fadeUp } from "../lib/animations";
 import { ArrowUpRight } from "lucide-react";
 
@@ -68,10 +69,13 @@ export function Leadership() {
             </motion.div>
 
             <motion.div {...fadeUp(0.4)} className="mt-12">
-              <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-white/80 transition-colors group">
+              <Link 
+                to="/biography/dr-kunle-oladosu" 
+                className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-cyan-400 transition-colors group"
+              >
                 Read Full Biography
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </a>
+              </Link>
             </motion.div>
           </div>
 

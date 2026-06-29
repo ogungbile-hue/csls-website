@@ -36,7 +36,7 @@ export function Footer() {
             </a>
             <a 
               href="#" 
-              aria-label="Twitter" 
+              aria-label="Twitter / X" 
               className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-white/10 hover:border-white/20 transition-all"
             >
               <Twitter className="w-4 h-4" />
@@ -94,12 +94,10 @@ export function Footer() {
         <div className="flex flex-col gap-4">
           <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground/90">Quick Links</h4>
           <ul className="flex flex-col gap-2.5 text-sm text-muted-foreground">
-            <li><Link to="/" className="hover:text-foreground transition-colors">Home Overview</Link></li>
-            <li><Link to="/about" className="hover:text-foreground transition-colors">About Us</Link></li>
-            <li><Link to="/#divisions" className="hover:text-foreground transition-colors">Our Mandate</Link></li>
-            <li><Link to="/#leadership" className="hover:text-foreground transition-colors">Directorate & Staff</Link></li>
-            <li><Link to="/#journals" className="hover:text-foreground transition-colors">Publications & Journals</Link></li>
-            <li><Link to="/#news" className="hover:text-foreground transition-colors">News & Announcements</Link></li>
+            <li><Link to="/" className="hover:text-foreground transition-colors">Home</Link></li>
+            <li><Link to="/#divisions" className="hover:text-foreground transition-colors">Services & Divisions</Link></li>
+            <li><Link to="/about" className="hover:text-foreground transition-colors">Organogram & Structure</Link></li>
+            <li><Link to="/contact" className="hover:text-foreground transition-colors">Contact Us</Link></li>
           </ul>
         </div>
 
@@ -109,7 +107,7 @@ export function Footer() {
           <ul className="flex flex-col gap-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-2.5">
               <MapPin className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-              <span className="leading-snug">University of Ibadan, Ibadan, Oyo State, Nigeria.</span>
+              <span className="leading-snug">Center for Space Life Sciences, NASRDA, University of Ibadan, Ibadan, Oyo State, Nigeria.</span>
             </li>
             <li className="flex items-center gap-2.5">
               <Mail className="w-4 h-4 text-cyan-400 shrink-0" />

@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { fadeUp } from "../lib/animations";
 import Hls from "hls.js";
 
@@ -93,12 +94,15 @@ export function NewsCTA() {
         </div>
 
         <motion.div {...fadeUp(0.4)} className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <button className="w-full sm:w-auto px-8 py-3.5 bg-foreground text-background font-medium rounded-full hover:bg-foreground/90 transition-colors">
+          <button className="w-full sm:w-auto px-8 py-3.5 bg-foreground text-background font-medium rounded-full hover:bg-foreground/90 transition-colors cursor-pointer">
             Submit Manuscript
           </button>
-          <button className="w-full sm:w-auto liquid-glass px-8 py-3.5 text-foreground font-medium rounded-full hover:bg-white/10 transition-colors">
+          <Link 
+            to="/contact?subject=Collaboration" 
+            className="w-full sm:w-auto liquid-glass px-8 py-3.5 text-foreground font-medium rounded-full hover:bg-white/10 transition-colors flex items-center justify-center text-center cursor-pointer"
+          >
             Collaborate with CSLS
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>

@@ -8,7 +8,7 @@ const navItems = [
   { name: "Divisions", path: "/#divisions" },
   { name: "Leadership", path: "/#leadership" },
   { name: "Journals", path: "/#journals" },
-  { name: "Contact", path: "/#news" },
+  { name: "Contact", path: "/contact" },
 ];
 
 export function Navbar() {

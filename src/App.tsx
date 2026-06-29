@@ -10,6 +10,8 @@ import { NewsCTA } from "./components/NewsCTA";
 import { Footer } from "./components/Footer";
 import DivisionDetail from "./pages/DivisionDetail";
 import AboutUs from "./pages/AboutUs";
+import DirectorBiography from "./pages/DirectorBiography";
+import ContactUs from "./pages/ContactUs";
 
 function ScrollHandler() {
   const { pathname, hash } = useLocation();
@@ -52,6 +54,11 @@ export default function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/divisions/:id" element={<DivisionDetail />} />
+        <Route path="/biography/dr-kunle-oladosu" element={<DirectorBiography />} />
+        <Route path="/leadership/dr-kunle-oladosu" element={<DirectorBiography />} />
+        <Route path="/biography/:id" element={<DirectorBiography />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
     </BrowserRouter>
   );
