@@ -1,0 +1,6 @@
+{
+  "name": "Center for Space Life Sciences",
+  "description": "The advanced center for astrobiology, space medicine, and earth observation systems based at the University of Ibadan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
