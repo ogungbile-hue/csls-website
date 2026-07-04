@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Globe, ArrowUpRight } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Globe, ArrowUpRight } from "lucide-react";
 
 export function Footer() {
   return (
@@ -36,10 +36,12 @@ export function Footer() {
             </a>
             <a 
               href="#" 
-              aria-label="Twitter / X" 
+              aria-label="X (formerly Twitter)" 
               className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-white/10 hover:border-white/20 transition-all"
             >
-              <Twitter className="w-4 h-4" />
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="w-4 h-4 fill-current">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
             </a>
             <a 
               href="https://nasrda.gov.ng" 
