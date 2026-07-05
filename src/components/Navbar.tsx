@@ -40,12 +40,12 @@ export function Navbar() {
             const active = isItemActive(item.path);
             return (
               <li key={item.name} className="flex items-center gap-5 lg:gap-6">
-                <Link 
-                  to={item.path} 
+                <Link
+                  to={item.path}
                   className={cn(
                     "text-sm transition-all duration-200 relative py-1",
-                    active 
-                      ? "text-cyan-400 font-semibold" 
+                    active
+                      ? "text-cyan-400 font-semibold"
                       : "text-muted-foreground hover:text-foreground"
                   )}
                 >
@@ -65,7 +65,7 @@ export function Navbar() {
 
       <div className="flex items-center gap-3">
         <a href="#" aria-label="LinkedIn" className={cn("liquid-glass w-10 h-10 rounded-full flex items-center justify-center text-foreground hover:bg-white/5 transition-colors")}>
-          <Linkedin className="w-4 h-4" />
+          <Linkedin className="w-4 h-4 fill-current" />
         </a>
         <a href="#" aria-label="X (formerly Twitter)" className={cn("liquid-glass w-10 h-10 rounded-full flex items-center justify-center text-foreground hover:bg-white/5 transition-colors")}>
           <svg viewBox="0 0 24 24" aria-hidden="true" className="w-4 h-4 fill-current">

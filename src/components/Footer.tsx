@@ -9,7 +9,7 @@ export function Footer() {
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-border/10 relative z-10">
-        
+
         {/* Brand Column (2 cols wide on large screens) */}
         <div className="lg:col-span-2 flex flex-col gap-5">
           <div className="flex items-center gap-3">
@@ -21,33 +21,33 @@ export function Footer() {
               </span>
             </div>
           </div>
-          
+
           <p className="text-sm text-muted-foreground leading-relaxed max-w-md">
             Pioneering space life sciences, biotechnology, space medicine, and environmental life support systems under the National Space Research and Development Agency (NASRDA).
           </p>
 
           <div className="flex items-center gap-3 pt-2">
-            <a 
-              href="#" 
-              aria-label="LinkedIn" 
+            <a
+              href="#"
+              aria-label="LinkedIn"
               className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-white/10 hover:border-white/20 transition-all"
             >
-              <Linkedin className="w-4 h-4" />
+              <Linkedin className="w-4 h-4 fill-current" />
             </a>
-            <a 
-              href="#" 
-              aria-label="X (formerly Twitter)" 
+            <a
+              href="#"
+              aria-label="X (formerly Twitter)"
               className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-white/10 hover:border-white/20 transition-all"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true" className="w-4 h-4 fill-current">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
               </svg>
             </a>
-            <a 
-              href="https://nasrda.gov.ng" 
-              target="_blank" 
+            <a
+              href="https://nasrda.gov.ng"
+              target="_blank"
               rel="noopener noreferrer"
-              aria-label="NASRDA Website" 
+              aria-label="NASRDA Website"
               className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-white/10 hover:border-white/20 transition-all"
             >
               <Globe className="w-4 h-4" />
