@@ -12,7 +12,7 @@ export function Hero() {
           muted
           playsInline
           className="w-full h-full object-cover opacity-60"
-          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260325_120549_0cd82c36-56b3-4dd9-b190-069cfc3a623f.mp4"
+          src="https://website-assets-precious-ogungbile.s3.eu-north-1.amazonaws.com/Spacelife.mp4"
         />
         <div className="absolute inset-0 bg-black/30 mix-blend-multiply" />
       </div>

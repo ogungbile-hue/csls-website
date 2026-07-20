@@ -164,11 +164,16 @@ export default function AboutUs() {
           {/* ORGANOGRAM GRAPHICAL CONTAINER */}
           <div className="p-6 md:p-12 rounded-3xl bg-card border border-border/60 space-y-12 relative overflow-hidden shadow-2xl">
             
-            {/* Top Tier: DIRECTOR */}
+            {/* Top Tier: DIRECTOR & ASSISTANT DIRECTOR */}
             <div className="flex flex-col items-center relative z-10">
               <div className="px-8 py-5 rounded-2xl bg-gradient-to-r from-cyan-500 via-teal-400 to-indigo-500 text-black font-extrabold text-lg md:text-xl shadow-xl shadow-cyan-500/20 tracking-wide flex items-center gap-3">
                 <Landmark className="w-6 h-6" />
                 DIRECTOR
+              </div>
+              <div className="w-0.5 h-6 bg-cyan-500/40 my-1" />
+              <div className="px-6 py-3 rounded-2xl bg-gradient-to-r from-cyan-500/80 to-teal-400/80 text-black font-bold text-base shadow-lg shadow-cyan-500/10 tracking-wide flex items-center gap-2 backdrop-blur-sm border border-cyan-500/30">
+                <Users className="w-5 h-5" />
+                ASSISTANT DIRECTOR
               </div>
               <div className="w-0.5 h-8 bg-cyan-500/40 my-1" />
             </div>
