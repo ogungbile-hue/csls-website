@@ -1,53 +1,12 @@
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
-import { cn } from "../lib/utils";
-
-const text = "The Centre for Space Life Sciences is devoted to revolutionary interdisciplinary research with cutting-edge technologies and fostering international collaborations exploring the effects of space environments on biological systems that benefit humanity on Earth and in space.";
-const highlightWords = ["space", "environments", "biological", "systems", "humanity"];
-
-interface WordProps {
-  children: string;
-  progress: MotionValue<number>;
-  range: [number, number];
-  isHighlight: boolean;
-}
-
-const Word: React.FC<WordProps> = ({ children, progress, range, isHighlight }) => {
-  const opacity = useTransform(progress, range, [0.15, 1]);
-  return (
-    <span className="relative inline-block mr-[1.5vw] mt-[1vw]">
-      <motion.span
-        style={{ opacity: isHighlight ? opacity : useTransform(progress, range, [0.15, 0.7]) }}
-        className={cn(isHighlight ? "text-foreground font-medium" : "text-foreground")}
-      >
-        {children}
-      </motion.span>
-    </span>
-  );
-};
+import { motion } from "framer-motion";
+import { fadeUp } from "../lib/animations";
+import { Sparkles } from "lucide-react";
 
 export function MissionScroll() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start 0.8", "start 0.1"]
-  });
-
-  const words = text.split(" ");
-  
-  // Format word matching slightly to handle punctuation if necessary, but here words are clean mostly.
-  // Actually, "space environments", "biological systems", and "humanity"
-  // Let's match purely by substring for the highlight
-  const checkHighlight = (word: string) => {
-    const cleanWord = word.replace(/[.,]/g, '').toLowerCase();
-    return highlightWords.includes(cleanWord) || 
-           (cleanWord === "environments" && word.includes("environments"));
-  };
-
   return (
-    <section ref={containerRef} className="relative pt-0 pb-32 md:pb-44 flex items-center justify-center min-h-[120vh]">
+    <section className="relative py-24 md:py-32 flex items-center justify-center overflow-hidden border-t border-border/30">
       {/* Background Video Layer */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] max-w-full opacity-20 pointer-events-none mix-blend-screen">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] max-w-full opacity-20 pointer-events-none mix-blend-screen z-0">
         <video
           autoPlay
           loop
@@ -59,23 +18,32 @@ export function MissionScroll() {
         <div className="absolute inset-0 bg-gradient-radial from-transparent to-background" />
       </div>
 
-      <div className="relative z-10 container max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl md:text-5xl lg:text-6xl leading-[1.3] md:leading-[1.4] tracking-tight font-light text-center flex flex-wrap justify-center">
-          {words.map((word, i) => {
-            const start = i / words.length;
-            const end = start + (1 / words.length);
-            return (
-              <Word 
-                key={i} 
-                progress={scrollYProgress} 
-                range={[start, end]}
-                isHighlight={checkHighlight(word)}
-              >
-                {word}
-              </Word>
-            );
-          })}
-        </h2>
+      <div className="relative z-10 container max-w-5xl mx-auto px-6 text-center">
+        <motion.div
+          {...fadeUp(0.1)}
+          className="p-8 md:p-16 lg:p-20 rounded-[2.5rem] bg-card/40 backdrop-blur-2xl border border-white/10 shadow-2xl relative overflow-hidden group"
+        >
+          {/* Subtle glow effects */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl transition-opacity duration-500 opacity-50 group-hover:opacity-100" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl transition-opacity duration-500 opacity-50 group-hover:opacity-100" />
+
+          <div className="relative z-10">
+            <div className="mb-8 flex justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center border border-white/10 shadow-inner group-hover:scale-110 transition-transform duration-500">
+                <Sparkles className="w-6 h-6 text-cyan-400" />
+              </div>
+            </div>
+            
+            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[1.4] md:leading-[1.5] tracking-tight font-light text-foreground/80 max-w-4xl mx-auto">
+              The Centre for Space Life Sciences is devoted to{" "}
+              <span className="font-serif italic font-normal text-white">revolutionary interdisciplinary research</span>{" "}
+              with cutting-edge technologies and fostering international collaborations exploring the effects of{" "}
+              <span className="text-cyan-400 font-medium">space environments on biological systems</span>{" "}
+              that benefit humanity on{" "}
+              <span className="text-white font-medium">Earth and in space.</span>
+            </h2>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

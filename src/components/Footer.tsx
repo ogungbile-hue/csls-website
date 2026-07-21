@@ -13,7 +13,7 @@ export function Footer() {
         {/* Brand Column (2 cols wide on large screens) */}
         <div className="lg:col-span-2 flex flex-col gap-5">
           <div className="flex items-center gap-3">
-            <img src="/images/logo.webp" alt="CSLS NASRDA Logo" className="w-12 h-12 object-contain" />
+            <img src="/images/nasrda-csls-logo.jpg" alt="CSLS NASRDA Logo" className="w-12 h-12 object-contain" />
             <div className="flex flex-col">
               <span className="font-bold text-xl leading-tight tracking-wide">CSLS</span>
               <span className="text-[10px] tracking-widest text-muted-foreground uppercase font-semibold">
