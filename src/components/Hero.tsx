@@ -24,7 +24,7 @@ export function Hero() {
       <div className="relative z-20 container max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
         <motion.div
           {...fadeUp(0.1)}
-          className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-8"
+          className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-foreground/10 bg-foreground/5 backdrop-blur-md mb-8"
         >
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
           <span className="text-xs font-medium tracking-wide text-foreground/80">

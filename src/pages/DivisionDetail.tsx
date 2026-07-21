@@ -39,7 +39,7 @@ export default function DivisionDetail() {
         <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
           <button
             onClick={() => navigate("/#divisions")}
-            className="group inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-white/10 transition-all mb-8 cursor-pointer"
+            className="group inline-flex items-center gap-2 px-4 py-2 rounded-full bg-foreground/5 border border-foreground/10 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-foreground/10 transition-all mb-8 cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             Back to All Divisions
@@ -65,7 +65,7 @@ export default function DivisionDetail() {
               </div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 shrink-0 self-start md:self-auto min-w-[260px]">
+            <div className="p-4 rounded-2xl bg-foreground/5 border border-foreground/10 shrink-0 self-start md:self-auto min-w-[260px]">
               <div className="text-[10px] uppercase font-bold tracking-wider text-muted-foreground mb-1 flex items-center gap-1.5">
                 <UserCheck className="w-3.5 h-3.5 text-cyan-400" /> Division Leadership
               </div>
@@ -104,7 +104,7 @@ export default function DivisionDetail() {
                 className="grid grid-cols-1 md:grid-cols-2 gap-6"
               >
                 {division.mandate && (
-                  <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+                  <div className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 space-y-2">
                     <h3 className="text-sm font-semibold uppercase tracking-wider text-cyan-400 flex items-center gap-2">
                       <Target className="w-4 h-4" /> Mandate
                     </h3>
@@ -112,7 +112,7 @@ export default function DivisionDetail() {
                   </div>
                 )}
                 {division.units && (
-                  <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+                  <div className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 space-y-2">
                     <h3 className="text-sm font-semibold uppercase tracking-wider text-cyan-400 flex items-center gap-2">
                       <Layers className="w-4 h-4" /> Division Units
                     </h3>
@@ -218,7 +218,7 @@ export default function DivisionDetail() {
               <p className="text-xs text-muted-foreground">Key personnel contributing to research and technical operations.</p>
               <div className="flex flex-col gap-2 pt-2">
                 {division.staffMembers.map((staff) => (
-                  <div key={staff} className="px-3.5 py-2 rounded-xl bg-white/5 border border-white/5 text-xs text-foreground/90 font-medium flex items-center gap-2">
+                  <div key={staff} className="px-3.5 py-2 rounded-xl bg-foreground/5 border border-foreground/5 text-xs text-foreground/90 font-medium flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" />
                     {staff}
                   </div>

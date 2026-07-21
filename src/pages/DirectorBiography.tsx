@@ -17,7 +17,7 @@ export default function DirectorBiography() {
         <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
           <button
             onClick={() => navigate("/#leadership")}
-            className="group inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-white/10 transition-all mb-8 cursor-pointer"
+            className="group inline-flex items-center gap-2 px-4 py-2 rounded-full bg-foreground/5 border border-foreground/10 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-foreground/10 transition-all mb-8 cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             Back to Leadership Overview
@@ -44,7 +44,7 @@ export default function DirectorBiography() {
               <p className="text-lg md:text-xl text-cyan-400 font-medium mt-2">Acting Director, Centre for Space Life Sciences (CSLS)</p>
             </div>
             
-            <p className="text-muted-foreground text-base md:text-lg leading-relaxed font-light pt-2 border-t border-white/10">
+            <p className="text-muted-foreground text-base md:text-lg leading-relaxed font-light pt-2 border-t border-foreground/10">
               Dr. Kunle Oladosu assumed office as the Acting Director of the Centre for Space Life Sciences on November 19, 2025. With over 15 years of experience in space science education, atmospheric research, and institutional management, Dr. Oladosu brings a wealth of expertise and vision to lead the Centre towards greater heights of scientific excellence and innovation.
             </p>
           </div>
@@ -72,23 +72,23 @@ export default function DirectorBiography() {
               </h2>
 
               <div className="space-y-6">
-                <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+                <div className="p-5 rounded-2xl bg-foreground/5 border border-foreground/10 space-y-2">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <h3 className="text-base font-bold text-foreground">PhD in Physics (Atmospheric Physics)</h3>
                     <span className="px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold">2008</span>
                   </div>
                   <p className="text-xs text-cyan-300 font-medium">Obafemi Awolowo University, Ile-Ife, Nigeria</p>
-                  <p className="text-xs md:text-sm text-muted-foreground leading-relaxed pt-2 italic border-t border-white/5 font-light">
+                  <p className="text-xs md:text-sm text-muted-foreground leading-relaxed pt-2 italic border-t border-foreground/5 font-light">
                     Dr. Oladosu's doctoral research focused on atmospheric physics phenomena with implications for space weather monitoring and telecommunications. His advanced studies laid the foundation for his future work in space science and environmental research.
                   </p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="p-4 rounded-2xl bg-white/5 border border-white/5 space-y-1">
+                  <div className="p-4 rounded-2xl bg-foreground/5 border border-foreground/5 space-y-1">
                     <h4 className="text-sm font-semibold text-foreground">Master of Science in Physics</h4>
                     <p className="text-xs text-muted-foreground">Obafemi Awolowo University, Ile-Ife</p>
                   </div>
-                  <div className="p-4 rounded-2xl bg-white/5 border border-white/5 space-y-1">
+                  <div className="p-4 rounded-2xl bg-foreground/5 border border-foreground/5 space-y-1">
                     <h4 className="text-sm font-semibold text-foreground">Bachelor of Science in Physics</h4>
                     <p className="text-xs text-muted-foreground">Obafemi Awolowo University, Ile-Ife</p>
                   </div>
@@ -142,10 +142,10 @@ export default function DirectorBiography() {
                     {/* Timeline Node Dot */}
                     <div className="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-background border-2 border-cyan-400 group-hover:scale-125 transition-transform" />
                     
-                    <div className="space-y-1.5 p-4 rounded-2xl bg-white/5 border border-white/5 group-hover:border-cyan-500/30 transition-colors">
+                    <div className="space-y-1.5 p-4 rounded-2xl bg-foreground/5 border border-foreground/5 group-hover:border-cyan-500/30 transition-colors">
                       <div className="flex flex-wrap items-center justify-between gap-2">
                         <h3 className="text-base font-bold text-foreground">{item.role}</h3>
-                        <span className="px-2.5 py-0.5 rounded-full bg-white/10 text-cyan-300 text-xs font-semibold">{item.period}</span>
+                        <span className="px-2.5 py-0.5 rounded-full bg-foreground/10 text-cyan-300 text-xs font-semibold">{item.period}</span>
                       </div>
                       <p className="text-xs font-medium text-cyan-400">{item.org}</p>
                       <p className="text-xs md:text-sm text-muted-foreground leading-relaxed pt-1 font-light">{item.desc}</p>
@@ -226,7 +226,7 @@ export default function DirectorBiography() {
                   "Recognized for significant contributions to space science education and research.",
                   "Built strategic international partnerships with leading space research institutions."
                 ].map((achieve, i) => (
-                  <li key={i} className="flex items-start gap-2.5 p-2 rounded-xl bg-white/5 border border-white/5">
+                  <li key={i} className="flex items-start gap-2.5 p-2 rounded-xl bg-foreground/5 border border-foreground/5">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
                     <span>{achieve}</span>
                   </li>
@@ -262,7 +262,7 @@ export default function DirectorBiography() {
               <h3 className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Leadership Approach Pillars</h3>
               <div className="flex flex-wrap gap-2">
                 {["Scientific Excellence", "Capacity Building", "International Partnerships", "Practical Impact", "Diversity & Inclusion", "Institutional Development"].map((pillar, i) => (
-                  <span key={i} className="px-3.5 py-1.5 rounded-xl bg-white/10 text-foreground font-semibold text-xs border border-white/10">
+                  <span key={i} className="px-3.5 py-1.5 rounded-xl bg-foreground/10 text-foreground font-semibold text-xs border border-foreground/10">
                     {pillar}
                   </span>
                 ))}
@@ -270,7 +270,7 @@ export default function DirectorBiography() {
             </div>
 
             {/* Vision Quote Block */}
-            <div className="p-6 md:p-8 rounded-2xl bg-white/5 border border-white/10 relative mt-6 space-y-2">
+            <div className="p-6 md:p-8 rounded-2xl bg-foreground/5 border border-foreground/10 relative mt-6 space-y-2">
               <span className="text-4xl text-cyan-400 font-serif leading-none select-none">“</span>
               <p className="text-base md:text-xl font-serif italic text-foreground/90 leading-relaxed -mt-4">
                 To position the Centre for Space Life Sciences as a leading African research and education institution that conducts cutting-edge research linking space science with biological and environmental sciences, serves as a training hub, bridges research with national development, and acts as a catalyst for international knowledge exchange.

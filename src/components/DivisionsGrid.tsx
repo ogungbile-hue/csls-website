@@ -36,7 +36,7 @@ export function DivisionsGrid() {
               
               <div className="relative z-10 flex flex-col flex-1">
                 {/* Header Icon */}
-                <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 group-hover:border-cyan-500/30 group-hover:bg-cyan-500/10 flex items-center justify-center mb-6 transition-colors">
+                <div className="w-12 h-12 rounded-2xl bg-foreground/5 border border-foreground/10 group-hover:border-cyan-500/30 group-hover:bg-cyan-500/10 flex items-center justify-center mb-6 transition-colors">
                   <IconComponent className="w-6 h-6 text-foreground/80 group-hover:text-cyan-400 transition-colors" />
                 </div>
                 
@@ -63,12 +63,12 @@ export function DivisionsGrid() {
                     </div>
                     <div className="flex flex-wrap gap-1.5 max-h-14 overflow-hidden">
                       {div.staffMembers.slice(0, 3).map((member) => (
-                        <span key={member} className="px-2 py-0.5 rounded-md bg-white/5 text-[11px] text-muted-foreground border border-white/5 truncate max-w-[140px]">
+                        <span key={member} className="px-2 py-0.5 rounded-md bg-foreground/5 text-[11px] text-muted-foreground border border-foreground/5 truncate max-w-[140px]">
                           {member}
                         </span>
                       ))}
                       {div.staffMembers.length > 3 && (
-                        <span className="px-2 py-0.5 rounded-md bg-white/5 text-[11px] text-cyan-400/90 font-medium border border-white/5">
+                        <span className="px-2 py-0.5 rounded-md bg-foreground/5 text-[11px] text-cyan-400/90 font-medium border border-foreground/5">
                           +{div.staffMembers.length - 3} more
                         </span>
                       )}
@@ -81,7 +81,7 @@ export function DivisionsGrid() {
               <div className="relative z-10 pt-2">
                 <Link
                   to={`/divisions/${div.id}`}
-                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-white/5 border border-white/10 group-hover:bg-cyan-500/10 group-hover:border-cyan-500/30 text-sm font-medium text-foreground hover:text-cyan-300 transition-all duration-200"
+                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-foreground/5 border border-foreground/10 group-hover:bg-cyan-500/10 group-hover:border-cyan-500/30 text-sm font-medium text-foreground hover:text-cyan-300 transition-all duration-200"
                 >
                   Read More
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

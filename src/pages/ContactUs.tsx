@@ -80,19 +80,19 @@ export default function ContactUs() {
               transition={{ duration: 0.5 }}
               className="p-6 rounded-3xl bg-card border border-border/50 space-y-6 shadow-lg"
             >
-              <h2 className="text-lg font-bold text-foreground flex items-center gap-2 border-b border-white/10 pb-3">
+              <h2 className="text-lg font-bold text-foreground flex items-center gap-2 border-b border-foreground/10 pb-3">
                 <Landmark className="w-5 h-5 text-cyan-400" /> Executive Directorate
               </h2>
 
               {/* Director General Context */}
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/5 space-y-1">
+              <div className="p-4 rounded-2xl bg-foreground/5 border border-foreground/5 space-y-1">
                 <div className="text-[10px] font-bold uppercase tracking-wider text-cyan-400">Director General / CE, NASRDA</div>
                 <h3 className="text-sm font-bold text-foreground">Dr. Matthew Olumide Adepoju</h3>
                 <p className="text-[11px] text-muted-foreground font-medium">FEGOSON, Fpme, FNCA, FISS</p>
               </div>
 
               {/* Centre Leadership Context */}
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/5 space-y-1">
+              <div className="p-4 rounded-2xl bg-foreground/5 border border-foreground/5 space-y-1">
                 <div className="text-[10px] font-bold uppercase tracking-wider text-indigo-400">Ag. Director, CSLS Ibadan</div>
                 <h3 className="text-sm font-bold text-foreground">Dr. Olakunle Rufus Oladosu</h3>
                 <p className="text-[11px] text-muted-foreground font-medium">mNip, mNurs, mNimets, mursi_ng</p>
@@ -107,12 +107,12 @@ export default function ContactUs() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="p-6 rounded-3xl bg-card border border-border/50 space-y-5 shadow-lg"
             >
-              <h2 className="text-lg font-bold text-foreground flex items-center gap-2 border-b border-white/10 pb-3">
+              <h2 className="text-lg font-bold text-foreground flex items-center gap-2 border-b border-foreground/10 pb-3">
                 <UserCheck className="w-5 h-5 text-cyan-400" /> Direct Information
               </h2>
 
               <ul className="space-y-4 text-xs md:text-sm text-muted-foreground">
-                <li className="flex items-start gap-3.5 p-3 rounded-2xl bg-white/5 border border-white/5">
+                <li className="flex items-start gap-3.5 p-3 rounded-2xl bg-foreground/5 border border-foreground/5">
                   <MapPin className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-foreground block mb-0.5">Physical Address</strong>
@@ -120,7 +120,7 @@ export default function ContactUs() {
                   </div>
                 </li>
 
-                <li className="flex items-start gap-3.5 p-3 rounded-2xl bg-white/5 border border-white/5">
+                <li className="flex items-start gap-3.5 p-3 rounded-2xl bg-foreground/5 border border-foreground/5">
                   <Mail className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-foreground block mb-0.5">Email Communications</strong>
@@ -129,7 +129,7 @@ export default function ContactUs() {
                   </div>
                 </li>
 
-                <li className="flex items-start gap-3.5 p-3 rounded-2xl bg-white/5 border border-white/5">
+                <li className="flex items-start gap-3.5 p-3 rounded-2xl bg-foreground/5 border border-foreground/5">
                   <Phone className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-foreground block mb-0.5">Phone Line</strong>
@@ -151,15 +151,15 @@ export default function ContactUs() {
                 <Clock className="w-4 h-4 text-cyan-400" /> Business Hours
               </h3>
               <div className="space-y-2 text-xs md:text-sm text-muted-foreground font-light">
-                <div className="flex justify-between p-2.5 rounded-xl bg-white/5 border border-white/5">
+                <div className="flex justify-between p-2.5 rounded-xl bg-foreground/5 border border-foreground/5">
                   <span>Monday – Friday</span>
                   <span className="font-semibold text-foreground">9:00 AM – 5:00 PM</span>
                 </div>
-                <div className="flex justify-between p-2.5 rounded-xl bg-white/5 border border-white/5">
+                <div className="flex justify-between p-2.5 rounded-xl bg-foreground/5 border border-foreground/5">
                   <span>Saturday</span>
                   <span className="font-semibold text-foreground">10:00 AM – 3:00 PM</span>
                 </div>
-                <div className="flex justify-between p-2.5 rounded-xl bg-white/5 border border-white/5 text-muted-foreground/60">
+                <div className="flex justify-between p-2.5 rounded-xl bg-foreground/5 border border-foreground/5 text-muted-foreground/60">
                   <span>Sunday & Public Holidays</span>
                   <span>Closed</span>
                 </div>
@@ -203,7 +203,7 @@ export default function ContactUs() {
                         placeholder="Dr. John Doe"
                         value={formData.fullName}
                         onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all text-sm"
+                        className="w-full px-4 py-3 rounded-xl bg-foreground/5 border border-foreground/10 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all text-sm"
                       />
                     </div>
 
@@ -215,7 +215,7 @@ export default function ContactUs() {
                         placeholder="john.doe@example.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all text-sm"
+                        className="w-full px-4 py-3 rounded-xl bg-foreground/5 border border-foreground/10 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all text-sm"
                       />
                     </div>
                   </div>
@@ -228,7 +228,7 @@ export default function ContactUs() {
                         placeholder="+234 800 000 0000"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all text-sm"
+                        className="w-full px-4 py-3 rounded-xl bg-foreground/5 border border-foreground/10 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all text-sm"
                       />
                     </div>
 
@@ -240,7 +240,7 @@ export default function ContactUs() {
                         placeholder="Research Collaboration Inquiry"
                         value={formData.subject}
                         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all text-sm"
+                        className="w-full px-4 py-3 rounded-xl bg-foreground/5 border border-foreground/10 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all text-sm"
                       />
                     </div>
                   </div>
@@ -253,7 +253,7 @@ export default function ContactUs() {
                       placeholder="Write your message details here..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all text-sm resize-none"
+                      className="w-full px-4 py-3 rounded-xl bg-foreground/5 border border-foreground/10 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all text-sm resize-none"
                     />
                   </div>
 

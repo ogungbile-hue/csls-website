@@ -127,7 +127,7 @@ export default function AboutUs() {
               ].map((obj, index) => {
                 const ObjIcon = obj.icon;
                 return (
-                  <div key={index} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-500/30 transition-all duration-200 space-y-3 group">
+                  <div key={index} className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 hover:border-cyan-500/30 transition-all duration-200 space-y-3 group">
                     <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center group-hover:bg-cyan-500 group-hover:text-black transition-colors">
                       <ObjIcon className="w-5 h-5 text-cyan-400 group-hover:text-black transition-colors" />
                     </div>
@@ -181,20 +181,20 @@ export default function AboutUs() {
             {/* Direct Executive Attachments (Side Nodes) */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10 max-w-5xl mx-auto">
               {/* Left Side Attachments */}
-              <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-3">
-                <div className="text-xs font-bold uppercase tracking-wider text-cyan-400 flex items-center gap-2 pb-2 border-b border-white/10">
+              <div className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 space-y-3">
+                <div className="text-xs font-bold uppercase tracking-wider text-cyan-400 flex items-center gap-2 pb-2 border-b border-foreground/10">
                   <Briefcase className="w-4 h-4" /> Executive Attachments (West Wing)
                 </div>
                 <ul className="space-y-2.5 text-xs text-foreground/90 font-medium">
-                  <li className="flex items-center gap-2.5 p-2 rounded-lg bg-white/5 border border-white/5">
+                  <li className="flex items-center gap-2.5 p-2 rounded-lg bg-foreground/5 border border-foreground/5">
                     <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" />
                     Media & Corporate Affairs
                   </li>
-                  <li className="flex items-center gap-2.5 p-2 rounded-lg bg-white/5 border border-white/5">
+                  <li className="flex items-center gap-2.5 p-2 rounded-lg bg-foreground/5 border border-foreground/5">
                     <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" />
                     Library & Documentation
                   </li>
-                  <li className="flex items-center gap-2.5 p-2 rounded-lg bg-white/5 border border-white/5">
+                  <li className="flex items-center gap-2.5 p-2 rounded-lg bg-foreground/5 border border-foreground/5">
                     <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" />
                     Consultancy Unit
                   </li>
@@ -202,20 +202,20 @@ export default function AboutUs() {
               </div>
 
               {/* Right Side Attachments */}
-              <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-3">
-                <div className="text-xs font-bold uppercase tracking-wider text-indigo-400 flex items-center gap-2 pb-2 border-b border-white/10">
+              <div className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 space-y-3">
+                <div className="text-xs font-bold uppercase tracking-wider text-indigo-400 flex items-center gap-2 pb-2 border-b border-foreground/10">
                   <Scale className="w-4 h-4" /> Executive Attachments (East Wing)
                 </div>
                 <ul className="space-y-2.5 text-xs text-foreground/90 font-medium">
-                  <li className="flex items-center gap-2.5 p-2 rounded-lg bg-white/5 border border-white/5">
+                  <li className="flex items-center gap-2.5 p-2 rounded-lg bg-foreground/5 border border-foreground/5">
                     <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0" />
                     Special Duties / Protocols
                   </li>
-                  <li className="flex items-center gap-2.5 p-2 rounded-lg bg-white/5 border border-white/5">
+                  <li className="flex items-center gap-2.5 p-2 rounded-lg bg-foreground/5 border border-foreground/5">
                     <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0" />
                     Local and International Collaborations
                   </li>
-                  <li className="flex items-center gap-2.5 p-2 rounded-lg bg-white/5 border border-white/5">
+                  <li className="flex items-center gap-2.5 p-2 rounded-lg bg-foreground/5 border border-foreground/5">
                     <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0" />
                     Legal Unit
                   </li>
@@ -236,14 +236,14 @@ export default function AboutUs() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 relative z-10">
               
               {/* 1. Administration Division */}
-              <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between">
+              <div className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between">
                 <div className="space-y-3">
                   <div className="w-10 h-10 rounded-xl bg-slate-500/10 border border-slate-500/20 flex items-center justify-center">
                     <FileText className="w-5 h-5 text-slate-300" />
                   </div>
                   <h3 className="text-base font-bold text-foreground">Administration Division</h3>
                 </div>
-                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-white/5">
+                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-foreground/5">
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" /> General Admin / Registry</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" /> Security, Transport, Maintenance & Promotion</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" /> NHS / NHE / Pension / Welfare</li>
@@ -252,14 +252,14 @@ export default function AboutUs() {
               </div>
 
               {/* 2. Finance and Account Division */}
-              <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between">
+              <div className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between">
                 <div className="space-y-3">
                   <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
                     <Wallet className="w-5 h-5 text-emerald-400" />
                   </div>
                   <h3 className="text-base font-bold text-foreground">Finance and Account Division</h3>
                 </div>
-                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-white/5">
+                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-foreground/5">
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" /> Planning Project Monitoring & Evidence</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" /> Liability Management</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" /> Other Charges Unit</li>
@@ -268,14 +268,14 @@ export default function AboutUs() {
               </div>
 
               {/* 3. Astrobiology and Space Medicine */}
-              <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between">
+              <div className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between">
                 <div className="space-y-3">
                   <div className="w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center">
                     <Dna className="w-5 h-5 text-rose-400" />
                   </div>
                   <h3 className="text-base font-bold text-foreground">Astrobiology & Space Medicine</h3>
                 </div>
-                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-white/5">
+                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-foreground/5">
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-rose-400 shrink-0 mt-0.5" /> Astrobiology & Exoplanetary Science</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-rose-400 shrink-0 mt-0.5" /> Space Medicine</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-rose-400 shrink-0 mt-0.5" /> Human Health in Space</li>
@@ -283,14 +283,14 @@ export default function AboutUs() {
               </div>
 
               {/* 4. Space Agriculture and Earth Observation */}
-              <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between">
+              <div className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between">
                 <div className="space-y-3">
                   <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center">
                     <Globe className="w-5 h-5 text-amber-400" />
                   </div>
                   <h3 className="text-base font-bold text-foreground">Space Agriculture & Earth Obs.</h3>
                 </div>
-                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-white/5">
+                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-foreground/5">
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" /> Atmospheric & Weather Monitoring</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" /> Precision Agriculture</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" /> Data & Resource Management</li>
@@ -298,14 +298,14 @@ export default function AboutUs() {
               </div>
 
               {/* 5. Space Security and Intelligence */}
-              <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between">
+              <div className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between">
                 <div className="space-y-3">
                   <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
                     <Radio className="w-5 h-5 text-blue-400" />
                   </div>
                   <h3 className="text-base font-bold text-foreground">Space Security & Intelligence</h3>
                 </div>
-                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-white/5">
+                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-foreground/5">
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" /> Space-Based Assets</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" /> Space & Network Security</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" /> Military Intelligence</li>
@@ -313,14 +313,14 @@ export default function AboutUs() {
               </div>
 
               {/* 6. Space Life Sciences Education & Outreach */}
-              <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between">
+              <div className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between">
                 <div className="space-y-3">
                   <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center">
                     <GraduationCap className="w-5 h-5 text-purple-400" />
                   </div>
                   <h3 className="text-base font-bold text-foreground">Education & Outreach</h3>
                 </div>
-                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-white/5">
+                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-foreground/5">
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-purple-400 shrink-0 mt-0.5" /> Space Life Outreachers</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-purple-400 shrink-0 mt-0.5" /> Science Trainings & Awareness</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-purple-400 shrink-0 mt-0.5" /> Short Courses & Specialized Programs</li>
@@ -328,14 +328,14 @@ export default function AboutUs() {
               </div>
 
               {/* 7. Space Tech and Life Support Systems */}
-              <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between md:col-span-2 lg:col-span-1">
+              <div className="p-6 rounded-2xl bg-foreground/5 border border-foreground/10 space-y-4 hover:border-cyan-500/30 transition-colors flex flex-col justify-between md:col-span-2 lg:col-span-1">
                 <div className="space-y-3">
                   <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
                     <Rocket className="w-5 h-5 text-cyan-400" />
                   </div>
                   <h3 className="text-base font-bold text-foreground">Space Tech & Life Support (STLSS)</h3>
                 </div>
-                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-white/5">
+                <ul className="space-y-2 text-xs text-muted-foreground pt-3 border-t border-foreground/5">
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" /> Space Travel Habitation Unit</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" /> Instrumentation & Innovative Tech</li>
                   <li className="flex items-start gap-2"><ChevronRight className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" /> Maintenance & Technical Support</li>

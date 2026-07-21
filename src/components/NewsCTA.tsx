@@ -80,13 +80,13 @@ export function NewsCTA() {
               href="#"
               key={i}
               {...fadeUp(0.2 + i * 0.1)}
-              className="group block p-6 md:p-8 bg-card/60 backdrop-blur-md border border-white/5 hover:border-white/20 hover:bg-white/5 rounded-2xl transition-all"
+              className="group block p-6 md:p-8 bg-card/60 backdrop-blur-md border border-foreground/5 hover:border-foreground/20 hover:bg-foreground/5 rounded-2xl transition-all"
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-3">
                 <span className="text-[10px] font-bold tracking-widest text-muted-foreground uppercase">{item.date}</span>
                 <span className="text-xs font-mono text-muted-foreground/60">{item.readTime}</span>
               </div>
-              <h3 className="text-lg md:text-xl font-medium text-foreground/90 group-hover:text-white transition-colors leading-snug">
+              <h3 className="text-lg md:text-xl font-medium text-foreground/90 group-hover:text-foreground transition-colors leading-snug">
                 {item.title}
               </h3>
             </motion.a>
@@ -99,7 +99,7 @@ export function NewsCTA() {
           </button>
           <Link 
             to="/contact?subject=Collaboration" 
-            className="w-full sm:w-auto liquid-glass px-8 py-3.5 text-foreground font-medium rounded-full hover:bg-white/10 transition-colors flex items-center justify-center text-center cursor-pointer"
+            className="w-full sm:w-auto liquid-glass px-8 py-3.5 text-foreground font-medium rounded-full hover:bg-foreground/10 transition-colors flex items-center justify-center text-center cursor-pointer"
           >
             Collaborate with CSLS
           </Link>

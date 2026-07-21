@@ -36,7 +36,7 @@ export function Journals() {
         {/* Video Banner */}
         <motion.div 
           {...fadeUp(0.2)}
-          className="w-full aspect-[3/1] min-h-[300px] max-h-[500px] relative rounded-3xl overflow-hidden border border-white/10 mb-20"
+          className="w-full aspect-[3/1] min-h-[300px] max-h-[500px] relative rounded-3xl overflow-hidden border border-foreground/10 mb-20"
         >
           <video
             autoPlay
@@ -49,8 +49,8 @@ export function Journals() {
           <div className="absolute inset-0 bg-gradient-to-t from-background via-black/40 to-transparent" />
           
           <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12">
-            <div className="text-[10px] font-bold tracking-widest text-white/60 uppercase mb-2">Scientific Contributions</div>
-            <p className="text-xl md:text-3xl font-medium text-white max-w-xl leading-tight">
+            <div className="text-[10px] font-bold tracking-widest text-foreground/60 uppercase mb-2">Scientific Contributions</div>
+            <p className="text-xl md:text-3xl font-medium text-foreground max-w-xl leading-tight">
               Advancing global knowledge through rigorous academic publication.
             </p>
           </div>
@@ -62,13 +62,13 @@ export function Journals() {
             <motion.div 
               key={i}
               {...fadeUp(0.3 + i * 0.1)}
-              className="group flex flex-col p-8 rounded-2xl bg-card border border-border/50 hover:border-white/20 transition-colors"
+              className="group flex flex-col p-8 rounded-2xl bg-card border border-border/50 hover:border-foreground/20 transition-colors"
             >
               <div className="flex items-center justify-between mb-6">
-                <span className="px-3 py-1 text-xs font-mono font-medium rounded-full bg-white/5 text-foreground/80 border border-white/10">
+                <span className="px-3 py-1 text-xs font-mono font-medium rounded-full bg-foreground/5 text-foreground/80 border border-foreground/10">
                   IF: {journal.impactFactor}
                 </span>
-                <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                <a href="#" className="w-8 h-8 rounded-full bg-foreground/5 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                   <ArrowUpRight className="w-4 h-4 text-foreground/80" />
                 </a>
               </div>
