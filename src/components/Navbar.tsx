@@ -4,6 +4,7 @@ import { Linkedin, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "../lib/utils";
 import { ThemeToggle } from "./ThemeToggle";
+import logoImg from "../assets/logo.png";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -32,7 +33,7 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 backdrop-blur-md bg-background/60 dark:bg-background/20 border-b border-border/10">
       <div className="flex items-center gap-8 xl:gap-12">
         <Link to="/" className="flex items-center gap-3 group shrink-0">
-          <img src="/images/nasrda-csls-logo.jpg" alt="CSLS NASRDA Logo" className="w-10 h-10 object-contain group-hover:scale-105 transition-transform" />
+          <img src={logoImg} alt="CSLS NASRDA Logo" className="w-10 h-10 object-contain group-hover:scale-105 transition-transform" />
           <div className="flex flex-col shrink-0">
             <span className="font-bold text-lg leading-tight tracking-wide group-hover:text-cyan-500 dark:group-hover:text-cyan-400 transition-colors">CSLS</span>
             <span className="text-[9px] tracking-widest text-foreground/70 uppercase font-bold">NASRDA CENTRE</span>
